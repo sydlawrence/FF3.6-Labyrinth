@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title>Firefox 3.6 Accelerometer Labyrinth</title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="prototypes.js"></script>
+		<script type="text/javascript" src="labrynth.js"></script>
+		<script type="text/javascript" src="ball.js"></script>
+		<script type="text/javascript" src="hole.js"></script>
+		<script type="text/javascript" src="finish.js"></script>
+		<script type="text/javascript" src="wall.js"></script>
+		<script type="text/javascript" src="application.js"></script>
+</head>
+<body onload="start()">
+	<div id="about">
+		<h1>Firefox 3.6 Accelerometer game</h1>
+		<p>This is a remake of the awesome labyrinth game. But this time tilt your laptop to move the ball.</p>
+		<p><a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Download Firefox 3.6b</a></p>
+		<p><small><i>Requires Firefox 3.6 and a capable laptop (currently MacBooks, MacBook Pros, and some Thinkpads where drivers and devices are available.</i></small></p>
+	
+	</div>
+
+
+	<table id="debug">
+	<tr>
+		<th>axis</th>
+		<th>Value</th>
+	</tr>
+	<tr>
+		<td>x</td>
+		<td id="x"></td>
+	</tr>
+	<tr>
+		<td>y</td>
+		<td id="y"></td>
+	</tr>
+	<tr>
+		<td>z</td>
+		<td id="z"></td>
+	</tr>
+
+	<tr>
+		<td colspan="2" id="log">
+			test
+		</td>
+	</tr>
+	
+	</table>
+	
+	<div id="game">
+		<div id="ball">&nbsp;</div>
+	</div>
+	<div id="buttons">
+		<p><input type="button" value="reset" id="reset" onclick="location = ''" /></p>
+		<p><input type="button" value="start" id="starter" onclick="Labrynth.start()" /></p>
+	</div>
+	
+	<p>&copy; 2009 <a href="http://www.marmaladeontoast.co.uk">Marmalade on Toast</a> - <a href="http://twitter.com/marm_on_toast">Follow us on Twitter</a></p>
+	
+	
+	
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6435088-13");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	
+</body>
+</html>

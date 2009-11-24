@@ -1,0 +1,67 @@
+#game {
+	position:relative;
+	width:542px;
+	height:543px;
+	background: #ccc;
+	
+}
+
+#about {
+	position:absolute;
+	right:0px;
+	top:0px;
+	padding:20px;
+	width:200px;
+}
+
+#ball {
+	position:absolute;
+	top:172px;
+	left:465px;
+	width:25px;
+	height:25px;
+	background:#f00;
+	-moz-border-radius: 25px;
+	z-index:10;
+}
+
+#debug {
+position:absolute;
+top:0px;
+right:0px;
+display: none;
+}
+
+.hole {
+	position:absolute;
+	width:25px;
+	height:25px;
+	background:#000;
+	-moz-border-radius: 25px;
+	z-index:1;
+}
+
+.finish {
+	position:absolute;
+	width:25px;
+	height:25px;
+	background:#000;
+	border:10px solid #ff0;
+	-moz-border-radius: 25px;
+	z-index:1;
+}
+
+.wall {
+	position:absolute;
+	width:1px;
+	height:1px;
+	background:#00f;
+	border:5px solid #00f;
+	z-index:1;
+}
+
+#buttons {
+	position:absolute;
+	top:30px;
+	left:560px;
+}
